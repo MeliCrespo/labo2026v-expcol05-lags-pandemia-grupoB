@@ -1,0 +1,5 @@
+puesto	experimento	victorias	derrotas	sin_diferencia	puntaje	ganancia_media	ganancia_mediana	sin_diferencia_con	distinto_del_siguiente
+1	5B1	0	0	3	0	95.68825	95.705	5B2, 5B3, 5B4	FALSE
+2	5B4	0	0	3	0	95.532	95.59875	5B1, 5B2, 5B3	FALSE
+3	5B2	0	0	3	0	95.217	95.215	5B1, 5B3, 5B4	FALSE
+4	5B3	0	0	3	0	94.6175	94.6125	5B1, 5B2, 5B4	

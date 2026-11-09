@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+modelo_s*.txt
+tb_grid_search_s*_*.txt
+*.csv.gz
+.DS_Store

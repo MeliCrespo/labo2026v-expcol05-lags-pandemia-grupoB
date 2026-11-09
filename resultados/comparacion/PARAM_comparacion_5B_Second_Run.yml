@@ -1,0 +1,52 @@
+experimentos:
+- 5B1
+- 5B2
+- 5B3
+- 5B4
+corrida: Second_Run
+semillas:
+- 701669.0
+- 743027.0
+- 766957.0
+- 780523.0
+- 795493.0
+- 163741.0
+- 195401.0
+- 751643.0
+- 959473.0
+- 983327.0
+carpeta_exp: /content/buckets/b1/exp
+carpeta_salida: WF5B_comparacion_Second_Run
+wilcoxon:
+  alfa: 0.05
+  correccion: holm
+ventana_suavizado: 400.0
+grafico:
+  xlim:
+  - 0.0
+  - 20000.0
+resultado:
+  ranking:
+    puesto:
+    - 1
+    - 2
+    - 3
+    - 4
+    experimento:
+    - 5B1
+    - 5B4
+    - 5B2
+    - 5B3
+    puntaje:
+    - 0
+    - 0
+    - 0
+    - 0
+    ganancia_media:
+    - 95.68825
+    - 95.532
+    - 95.217
+    - 94.6175
+  conclusion: Ninguna de las 6 comparaciones es significativa (alfa= 0.05, correccion
+    holm). No hay evidencia de que alguna configuracion supere a las demas; el orden
+    1 a 4 es solo por ganancia media.

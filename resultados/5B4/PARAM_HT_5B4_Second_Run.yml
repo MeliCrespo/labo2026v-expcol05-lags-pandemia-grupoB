@@ -1,0 +1,179 @@
+semilla_primigenia: 701669.0
+semillas:
+- 701669.0
+- 743027.0
+- 766957.0
+- 780523.0
+- 795493.0
+- 163741.0
+- 195401.0
+- 751643.0
+- 959473.0
+- 983327.0
+experimento: 5B4
+experimento_descripcion: 5B4 - Dummy de pandemia
+corrida: Second_Run
+sufijo: _5B4_Second_Run
+dataset: analistajr_competencia_2026.csv.gz
+CA:
+  metodo: MachineLearning
+DR:
+  metodo: deflacion
+FEhist:
+  lags:
+  - 1.0
+  - 3.0
+  - 6.0
+trainingstrategy:
+  validate: 202105.0
+  training:
+  - 201901.0
+  - 201902.0
+  - 201903.0
+  - 201904.0
+  - 201905.0
+  - 201906.0
+  - 201907.0
+  - 201908.0
+  - 201909.0
+  - 201910.0
+  - 201911.0
+  - 201912.0
+  - 202001.0
+  - 202002.0
+  - 202003.0
+  - 202004.0
+  - 202005.0
+  - 202006.0
+  - 202007.0
+  - 202008.0
+  - 202009.0
+  - 202010.0
+  - 202011.0
+  - 202012.0
+  - 202101.0
+  - 202102.0
+  - 202103.0
+  training_pct: 1.0
+  positivos:
+  - BAJA+1
+  - BAJA+2
+FE_pandemia:
+  meses_pandemia:
+  - 202003.0
+  - 202004.0
+  - 202005.0
+  - 202006.0
+  - 202007.0
+  cols_excluidas: kmes
+lgbm:
+  param_fijos:
+    objective: binary
+    metric: auc
+    first_metric_only: yes
+    boost_from_average: yes
+    feature_pre_filter: no
+    verbosity: -100.0
+    force_row_wise: yes
+    seed: 701669.0
+    max_bin: 31.0
+    learning_rate: 0.03
+    feature_fraction: 0.5
+    num_iterations: 4096.0
+    early_stopping_rounds: 200.0
+    num_leaves: 64.0
+    min_data_in_leaf: 128.0
+HT:
+  num_leaves:
+  - 32.0
+  - 64.0
+  - 128.0
+  min_data_in_leaf:
+  - 512.0
+  - 1024.0
+  - 2048.0
+  - 4096.0
+  - 8192.0
+  feature_fraction:
+  - 0.5
+  - 0.8
+out:
+  lgbm:
+    mejores_hiperparametros:
+      semilla:
+      - 701669.0
+      - 743027.0
+      - 766957.0
+      - 780523.0
+      - 795493.0
+      - 163741.0
+      - 195401.0
+      - 751643.0
+      - 959473.0
+      - 983327.0
+      num_leaves:
+      - 64.0
+      - 64.0
+      - 32.0
+      - 32.0
+      - 128.0
+      - 64.0
+      - 128.0
+      - 64.0
+      - 32.0
+      - 64.0
+      min_data_in_leaf:
+      - 2048.0
+      - 2048.0
+      - 1024.0
+      - 1024.0
+      - 512.0
+      - 1024.0
+      - 4096.0
+      - 512.0
+      - 2048.0
+      - 2048.0
+      feature_fraction:
+      - 0.5
+      - 0.5
+      - 0.8
+      - 0.5
+      - 0.5
+      - 0.5
+      - 0.8
+      - 0.5
+      - 0.5
+      - 0.5
+      AUC:
+      - 0.9349561
+      - 0.9342893
+      - 0.9341116
+      - 0.9345987
+      - 0.9346541
+      - 0.9352943
+      - 0.9342137
+      - 0.9343474
+      - 0.9345359
+      - 0.9344832
+      num_iterations:
+      - 408
+      - 415
+      - 513
+      - 587
+      - 273
+      - 350
+      - 266
+      - 471
+      - 582
+      - 247
+      extremo_grilla:
+      - no
+      - no
+      - yes
+      - yes
+      - yes
+      - no
+      - yes
+      - yes
+      - yes
+      - no

@@ -1,0 +1,7 @@
+exp_A	exp_B	media_A	media_B	dif_media	dif_hodges_lehmann	semillas_gana_A	semillas_gana_B	semillas_empate	V	p_valor	p_exacto	p_ajustado	significativo	resultado
+5B1	5B2	95.68825	95.217	0.471249999999999	0.572499999999991	6	4	0	33	0.625	TRUE	1	FALSE	sin diferencia significativa
+5B1	5B3	95.68825	94.6175	1.07075	1.0775	8	2	0	45	0.083984375	TRUE	0.50390625	FALSE	sin diferencia significativa
+5B1	5B4	95.68825	95.532	0.15625	0.106249999999996	6	4	0	30	0.845703125	TRUE	1	FALSE	sin diferencia significativa
+5B2	5B3	95.217	94.6175	0.599500000000001	0.812500000000007	6	4	0	38	0.322265625	TRUE	1	FALSE	sin diferencia significativa
+5B2	5B4	95.217	95.532	-0.314999999999999	-0.373750000000001	4	6	0	21	0.556640625	TRUE	1	FALSE	sin diferencia significativa
+5B3	5B4	94.6175	95.532	-0.9145	-0.951249999999995	4	6	0	18	0.375	TRUE	1	FALSE	sin diferencia significativa
